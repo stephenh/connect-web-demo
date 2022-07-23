@@ -1,0 +1,36 @@
+{
+  "name": "connect-demo-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "!dist/**/*.test.*"
+  ],
+  "scripts": {
+    "test": "jest",
+    "format": "prettier --write 'src/**/*.{ts,js,tsx,jsx}'",
+    "start": "tsx ./src/index.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "prettier": {
+    "trailingComma": "all",
+    "printWidth": 120
+  },
+  "dependencies": {
+    "@bufbuild/connect-web": "^0.0.10",
+    "@bufbuild/protobuf": "^0.0.9"
+  },
+  "devDependencies": {
+    "@homebound/tsconfig": "^1.0.3",
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.7",
+    "tsx": "^3.8.0",
+    "typescript": "^4.7.4"
+  }
+}

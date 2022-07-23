@@ -1,0 +1,8 @@
+version: v1
+plugins:
+  - remote: buf.build/bufbuild/plugins/es:v0.0.9-1
+    out: src
+    opt: target=ts
+  - remote: buf.build/bufbuild/plugins/connect-web:v0.0.10-1
+    out: src
+    opt: target=ts
